@@ -85,37 +85,28 @@ Create a `.env` file in the root directory and add your Azure App Configuration 
 AZURE_APP_CONFIG_CONNECTION_STRING=Endpoint=https://tech-radar-v2-feature-app-config.azconfig.io;Id=xxx
 ```
 
-## Dependencies
-- `@azure/app-configuration`: ^1.6.0
-- `@azure/functions`: ^4.0.0-alpha.9
-- `@effect/schema`: ^0.68.9
-- `@opentelemetry/api`: ^1.9.0
-- `@opentelemetry/api-logs`: ^0.52.1
-- `@opentelemetry/auto-instrumentations-node`: ^0.47.1
-- `@opentelemetry/exporter-logs-otlp-grpc`: ^0.52.1
-- `@opentelemetry/exporter-metrics-otlp-grpc`: ^0.52.1
-- `@opentelemetry/exporter-trace-otlp-grpc`: ^0.52.1
-- `@opentelemetry/resources`: ^1.25.1
-- `@opentelemetry/sdk-logs`: ^0.52.1
-- `@opentelemetry/sdk-metrics`: ^1.25.1
-- `@opentelemetry/sdk-node`: ^0.52.1
-- `@opentelemetry/sdk-trace-node`: ^1.25.1
-- `@opentelemetry/semantic-conventions`: ^1.25.1
-- `dotenv`: ^16.4.5
-- `durable-functions`: 3.0.0-alpha.5
-- `effect`: ^3.4.0
+### Core Dependencies
 
-## Dev Dependencies
-- `@biomejs/biome`: 1.8.2
-- `@commitlint/cli`: ^19.3.0
-- `@types/node`: ^20.14.8
-- `azure-functions-core-tools`: ^4.x
-- `commitizen`: ^4.3.0
-- `cz-emoji-conventional`: ^1.0.2
-- `msw`: ^2.3.1
-- `rimraf`: ^5.0.0
-- `typescript`: ^5.5.0
-- `vitest`: ^1.6.0
+- **@azure/app-configuration**: Used for managing application settings and feature flags in Azure.
+- **@azure/functions**: Provides support for creating Azure Functions, enabling serverless computing.
+- **@effect/schema**: Utilized for data validation and schema definitions.
+- **@opentelemetry/api, @opentelemetry/sdk-* and related packages**: These packages are part of the OpenTelemetry suite, which we use for tracing, logging, and metrics collection to monitor application performance and behavior.
+- **dotenv**: Loads environment variables from a `.env` file, for managing configuration settings securely.
+- **durable-functions**: Enables the creation of stateful workflows within Azure Functions.
+- **effect**: A functional programming library for building applications with a focus on effect management.
+
+### Development Dependencies
+
+- **@biomejs/biome**: Provides a comprehensive toolkit for managing and maintaining code quality, including linting and formatting.
+- **@commitlint/cli**: Helps enforce consistent commit messages across the project.
+- **@types/node**: TypeScript type definitions for Node.js, ensuring type safety in our Node.js environment.
+- **azure-functions-core-tools**: CLI tools for developing, running, and deploying Azure Functions locally.
+- **commitizen**: Assists in creating standardized commit messages, improving readability and project history.
+- **cz-emoji-conventional**: An adapter for Commitizen that adds emojis to commit messages following the conventional commits specification.
+- **msw**: Mock Service Worker for API mocking, facilitating testing and development.
+- **rimraf**: A utility for recursively deleting files and directories, often used in cleanup scripts.
+- **typescript**: The primary language for our project, providing type safety and modern JavaScript features.
+- **vitest**: A fast unit testing framework that is powereed by Vite.
 
 ## Function Details
 ### AppConfHttpTrigger
