@@ -1,4 +1,5 @@
-### Updated Documentation with Commitizen / Commitlint Config
+
+![Logo](logo.WEBP)
 
 ## Overview
 **feature-flag-poc** is an Azure Function-based proof of concept for implementing feature flagging using Azure App Configuration. This project uses TypeScript and integrates with OpenTelemetry for observability.
