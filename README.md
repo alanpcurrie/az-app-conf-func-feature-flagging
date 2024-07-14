@@ -95,16 +95,14 @@ AZURE_APP_CONFIG_CONNECTION_STRING=Endpoint=https://tech-radar-v2-feature-app-co
 - **durable-functions**: Enables the creation of stateful workflows within Azure Functions.
 - **effect**: A functional programming library for building applications with a focus on effect management.
 
-### Development Dependencies
+### Core Development Dependencies
 
 - **@biomejs/biome**: Provides a comprehensive toolkit for managing and maintaining code quality, including linting and formatting.
 - **@commitlint/cli**: Helps enforce consistent commit messages across the project.
-- **@types/node**: TypeScript type definitions for Node.js, ensuring type safety in our Node.js environment.
 - **azure-functions-core-tools**: CLI tools for developing, running, and deploying Azure Functions locally.
 - **commitizen**: Assists in creating standardized commit messages, improving readability and project history.
 - **cz-emoji-conventional**: An adapter for Commitizen that adds emojis to commit messages following the conventional commits specification.
 - **msw**: Mock Service Worker for API mocking, facilitating testing and development.
-- **rimraf**: A utility for recursively deleting files and directories, often used in cleanup scripts.
 - **typescript**: The primary language for our project, providing type safety and modern JavaScript features.
 - **vitest**: A fast unit testing framework that is powereed by Vite.
 
